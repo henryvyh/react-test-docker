@@ -1,0 +1,18 @@
+version: "3"
+services:
+  react-app:
+    image: react-app
+    stdin_open: true
+    ports: 
+      - "3000:3000"
+    networks:
+      - ern-app
+  api-server:
+    image: api-server
+    ports:
+      - "4000:4000"
+    networks:
+      - ern-app
+networks:
+  ern-app:
+    driver: bridge
