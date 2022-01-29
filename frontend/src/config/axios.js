@@ -1,6 +1,5 @@
 import axios from "axios";
-// export const URL = "http://192.168.1.43:4000/api/";
-export const URL = "https://back-toolbox.herokuapp.com/api/";
+export const URL = "http://localhost:4000/api/";
 
 export const axiosChallenge = axios.create({
 	baseURL: URL,
